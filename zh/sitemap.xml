@@ -2,65 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/zh/about/</loc>
+    <loc>https://felicixawe.github.io/zh/about/</loc>
     <lastmod>2023-01-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/about/"
+                href="https://felicixawe.github.io/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/about/"
+                href="https://felicixawe.github.io/zh/about/"
                 />
   </url><url>
-    <loc>/zh/categories/</loc>
+    <loc>https://felicixawe.github.io/zh/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/categories/"
+                href="https://felicixawe.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/categories/"
+                href="https://felicixawe.github.io/zh/categories/"
                 />
   </url><url>
-    <loc>/zh/</loc>
+    <loc>https://felicixawe.github.io/zh/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="https://felicixawe.github.io/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/"
+                href="https://felicixawe.github.io/zh/"
                 />
   </url><url>
-    <loc>/zh/series/</loc>
+    <loc>https://felicixawe.github.io/zh/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/series/"
+                href="https://felicixawe.github.io/en/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/series/"
+                href="https://felicixawe.github.io/zh/series/"
                 />
   </url><url>
-    <loc>/zh/tags/</loc>
+    <loc>https://felicixawe.github.io/zh/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/"
+                href="https://felicixawe.github.io/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/"
+                href="https://felicixawe.github.io/zh/tags/"
                 />
   </url>
 </urlset>

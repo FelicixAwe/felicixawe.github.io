@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Esther&#39;s Blog</title>
-    <link>/en/posts/</link>
+    <link>https://felicixawe.github.io/en/posts/</link>
     <description>Recent content in Posts on Esther&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Jan 2023 22:45:00 -0800</lastBuildDate><atom:link href="/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Jan 2023 22:45:00 -0800</lastBuildDate><atom:link href="https://felicixawe.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First</title>
-      <link>/en/posts/first/</link>
+      <link>https://felicixawe.github.io/en/posts/first/</link>
       <pubDate>Fri, 06 Jan 2023 22:45:00 -0800</pubDate>
       
-      <guid>/en/posts/first/</guid>
+      <guid>https://felicixawe.github.io/en/posts/first/</guid>
       <description>This is a heading one This is a heading two This is a graph.</description>
     </item>
     
