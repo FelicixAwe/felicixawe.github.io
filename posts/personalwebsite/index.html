@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Personal blog &amp; website with Hugo &#43; PaperMod | Esther&#39;s Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Basics Introduction The whole website is developed based on Hugo and PaperMod theme. Deployment The website is deployed on GitHub Page. Create a new repository with the name yourname.github.io Initialize a git in public folder. 1 2 3 4 5 6 cd public git init git remote add origin [repository url] git add . git commit -m &#39;init&#39; git push -f --set-upstream origin master hugo -F --cleanDestinationDir will generate the">
+<meta name="author" content="Esther">
+<link rel="canonical" href="https://felicixawe.github.io/posts/personalwebsite/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bbb72b547c1a5ff72e7fd93213ce376372b6f8dd98bf908a9765ed27e1cc424f.css" integrity="sha256-u7crVHwaX/cuf9kyE843Y3K2&#43;N2Yv5CKl2XtJ&#43;HMQk8=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://felicixawe.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://felicixawe.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://felicixawe.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://felicixawe.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://felicixawe.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Jura:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rowdies:wght@300&family=Rubik:ital,wght@0,300;1,500&family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"><meta property="og:title" content="Personal blog &amp; website with Hugo &#43; PaperMod" />
+<meta property="og:description" content="Basics Introduction The whole website is developed based on Hugo and PaperMod theme. Deployment The website is deployed on GitHub Page. Create a new repository with the name yourname.github.io Initialize a git in public folder. 1 2 3 4 5 6 cd public git init git remote add origin [repository url] git add . git commit -m &#39;init&#39; git push -f --set-upstream origin master hugo -F --cleanDestinationDir will generate the" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://felicixawe.github.io/posts/personalwebsite/" /><meta property="article:section" content="posts" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Personal blog &amp; website with Hugo &#43; PaperMod"/>
+<meta name="twitter:description" content="Basics Introduction The whole website is developed based on Hugo and PaperMod theme. Deployment The website is deployed on GitHub Page. Create a new repository with the name yourname.github.io Initialize a git in public folder. 1 2 3 4 5 6 cd public git init git remote add origin [repository url] git add . git commit -m &#39;init&#39; git push -f --set-upstream origin master hugo -F --cleanDestinationDir will generate the"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://felicixawe.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Personal blog \u0026 website with Hugo + PaperMod",
+      "item": "https://felicixawe.github.io/posts/personalwebsite/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Personal blog \u0026 website with Hugo + PaperMod",
+  "name": "Personal blog \u0026 website with Hugo \u002b PaperMod",
+  "description": "Basics Introduction The whole website is developed based on Hugo and PaperMod theme. Deployment The website is deployed on GitHub Page. Create a new repository with the name yourname.github.io Initialize a git in public folder. 1 2 3 4 5 6 cd public git init git remote add origin [repository url] git add . git commit -m \u0026#39;init\u0026#39; git push -f --set-upstream origin master hugo -F --cleanDestinationDir will generate the",
+  "keywords": [
+    
+  ],
+  "articleBody": "Basics Introduction The whole website is developed based on Hugo and PaperMod theme.\nDeployment The website is deployed on GitHub Page.\nCreate a new repository with the name yourname.github.io\nInitialize a git in public folder.\n1 2 3 4 5 6 cd public git init git remote add origin [repository url] git add . git commit -m 'init' git push -f --set-upstream origin master hugo -F --cleanDestinationDir will generate the output file under public folder. Push changes in public folder to Github, and website will be automatically deployed.\nCode font Content Fonts Here I use Josephin Sans. Copy the generated HTML and CSS, insert the HTML into themes/PaperMod/layouts/partials/extend_head.html, and insert CSS into themes/PaperMod/layouts/assets/css/extended/blank.css\nCode Fonts I use Ubuntu Mono. Same steps as content fonts.\nConfig.yml I referred 【置顶】hugo 博客搭建 | PaperMod 主题 and arkalim’s configuration.\nTraffic Statistics Refer to busuanzi. Modify under themes/PaperMod/layouts/partials/footer.html as below.\n1 2 3 4 5 6 7 8 9 10 11 12 13 {{- if not (.Param \"hideFooter\") }} \u003cfooter class=\"footer\"\u003e \u003cspan\u003e \u0026copy; {{ now.Year }} \u003ca href=\"{{ \"\" | absLangURL }}\"\u003e{{ site.Title }}\u003c/a\u003e\u003c/span\u003e \u003c/span\u003e \u003cscript async src=\"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js\"\u003e\u003c/script\u003e \u003cspan id=\"busuanzi_container\"\u003e \u003clink rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css\"\u003e Visitors: \u003cspan id=\"busuanzi_value_site_uv\"\u003e\u003c/span\u003e Views: \u003cspan id=\"busuanzi_value_site_pv\"\u003e\u003c/span\u003e \u003c/span\u003e \u003c/footer\u003e {{- end }} Customize Social Media Icon Create your own SVG icon\nHere I added a customized resume icon. Under themes/PapaerMod/layouts/partials/svg.html, added code below:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 ... {{- else if (eq $icon_name \"resume\") -}} \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" \u003e \u003cpath d=\"M4 4v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8.342a2 2 0 0 0-.602-1.43l-4.44-4.342A2 2 0 0 0 13.56 2H6a2 2 0 0 0-2 2z\" \u003e\u003c/path\u003e \u003cpath d=\"M9 13h6\"\u003e\u003c/path\u003e \u003cpath d=\"M9 17h3\"\u003e\u003c/path\u003e \u003cpath d=\"M14 2v4a2 2 0 0 0 2 2h4\"\u003e\u003c/path\u003e \u003c/svg\u003e ... Side Column Directory Bar Refer to Hugo 博客目录放在侧边 | PaperMod 主题 | Sulv’s Blog (sulvblog.cn)\n",
+  "wordCount" : "344",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Esther"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://felicixawe.github.io/posts/personalwebsite/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Esther's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://felicixawe.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://felicixawe.github.io" accesskey="h" title="Esther&#39;s Blog (Alt + H)">
+                <img src="https://felicixawe.github.io/avocado.png" alt="" aria-label="logo"
+                    height="35">Esther&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://felicixawe.github.io/about" title="🙋🏻‍♂️About">
+                    <span>🙋🏻‍♂️About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://felicixawe.github.io/posts" title="📚Blogs">
+                    <span>📚Blogs</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://drive.google.com/file/d/1ohTTFwIjLJpQWMlsK_OH1ASVpSiVhIT7/view" title="📄Resume">
+                    <span>📄Resume</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://felicixawe.github.io">Home</a>&nbsp;»&nbsp;<a href="https://felicixawe.github.io/posts/">Posts</a></div>
+    <h1 class="post-title">
+      Personal blog &amp; website with Hugo &#43; PaperMod
+    </h1>
+    <div class="post-meta">1 min&nbsp;·&nbsp;Esther
+
+</div>
+  </header> 
+                    <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+            <summary accesskey="c" title="(Alt + C)">
+                <span class="details">Table of Contents</span>
+            </summary>
+
+            <div class="inner"><ul>
+                    <li>
+                        <a href="#basics-introduction" aria-label="Basics Introduction">Basics Introduction</a></li>
+                    <li>
+                        <a href="#deployment" aria-label="Deployment">Deployment</a></li>
+                    <li>
+                        <a href="#code-font" aria-label="Code font">Code font</a></li>
+                    <li>
+                        <a href="#configyml" aria-label="Config.yml">Config.yml</a></li>
+                    <li>
+                        <a href="#traffic-statistics" aria-label="Traffic Statistics">Traffic Statistics</a></li>
+                    <li>
+                        <a href="#customize-social-media-icon" aria-label="Customize Social Media Icon">Customize Social Media Icon</a></li>
+                    <li>
+                        <a href="#side-column-directory-bar" aria-label="Side Column Directory Bar">Side Column Directory Bar</a>
+                    </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;   
+    }
+</script>
+
+  <div class="post-content"><h1 id="basics-introduction">Basics Introduction<a hidden class="anchor" aria-hidden="true" href="#basics-introduction">#</a></h1>
+<p>The whole website is developed based on <strong><a href="https://gohugo.io/">Hugo</a></strong> and <strong><a href="https://themes.gohugo.io/themes/hugo-papermod/">PaperMod</a></strong> theme.</p>
+<h1 id="deployment">Deployment<a hidden class="anchor" aria-hidden="true" href="#deployment">#</a></h1>
+<p>The website is deployed on GitHub Page.</p>
+<ol>
+<li>
+<p>Create a new repository with the name <code>yourname.github.io</code></p>
+</li>
+<li>
+<p>Initialize a <code>git</code> in <strong>public</strong> folder.</p>
+<div class="highlight"><div style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-0-1"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-0-1">1</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-0-2"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-0-2">2</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-0-3"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-0-3">3</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-0-4"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-0-4">4</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-0-5"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-0-5">5</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-0-6"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-0-6">6</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">cd</span> public
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git remote add origin [repository url]
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#0ff;font-weight:bold">&#39;init&#39;</span>
+</span></span><span style="display:flex;"><span>git push -f --set-upstream origin master
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><code>hugo -F --cleanDestinationDir</code> will generate the output file under <strong>public</strong> folder. Push changes in <strong>public</strong> folder to Github, and website will be automatically deployed.</p>
+</li>
+</ol>
+<h1 id="code-font">Code font<a hidden class="anchor" aria-hidden="true" href="#code-font">#</a></h1>
+<ol>
+<li>Content Fonts</li>
+</ol>
+<p>Here I use <strong><a href="https://fonts.google.com/specimen/Josefin+Sans">Josephin Sans</a></strong>. Copy the generated HTML and CSS, insert the HTML into <code>themes/PaperMod/layouts/partials/extend_head.html</code>, and insert CSS into <code>themes/PaperMod/layouts/assets/css/extended/blank.css</code></p>
+<ol start="2">
+<li>Code Fonts</li>
+</ol>
+<p>I use <strong><a href="https://fonts.google.com/specimen/Ubuntu+Mono">Ubuntu Mono</a></strong>. Same steps as content fonts.</p>
+<h1 id="configyml">Config.yml<a hidden class="anchor" aria-hidden="true" href="#configyml">#</a></h1>
+<p>I referred <strong><a href="https://www.sulvblog.cn/posts/blog/build_hugo/">【置顶】hugo 博客搭建 | PaperMod 主题</a></strong> and <strong><a href="https://github.com/arkalim/portfolio">arkalim</a></strong>&rsquo;s configuration.</p>
+<h1 id="traffic-statistics">Traffic Statistics<a hidden class="anchor" aria-hidden="true" href="#traffic-statistics">#</a></h1>
+<p>Refer to <strong><a href="https://busuanzi.ibruce.info/">busuanzi</a></strong>. Modify under <code>themes/PaperMod/layouts/partials/footer.html</code> as below.</p>
+<div class="highlight"><div style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-1-1"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-1-1"> 1</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-1-2"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-1-2"> 2</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-1-3"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-1-3"> 3</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-1-4"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-1-4"> 4</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-1-5"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-1-5"> 5</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-1-6"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-1-6"> 6</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-1-7"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-1-7"> 7</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-1-8"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-1-8"> 8</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-1-9"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-1-9"> 9</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-1-10"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-1-10">10</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-1-11"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-1-11">11</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-1-12"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-1-12">12</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-1-13"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-1-13">13</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{- if not (.Param &#34;hideFooter&#34;) }}
+</span></span><span style="display:flex;"><span>&lt;<span style="font-weight:bold">footer</span> <span style="color:#007f7f">class</span>=<span style="color:#0ff;font-weight:bold">&#34;footer&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>            &amp;copy; {{ now.Year }} &lt;<span style="font-weight:bold">a</span> <span style="color:#007f7f">href</span>=<span style="color:#0ff;font-weight:bold">&#34;{{ &#34;</span><span style="color:#f00">&#34;</span> <span style="color:#f00">|</span> <span style="color:#007f7f">absLangURL</span> <span style="color:#f00">}}&#34;</span>&gt;{{ site.Title }}&lt;/<span style="font-weight:bold">a</span>&gt;&lt;/<span style="font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="font-weight:bold">script</span> <span style="color:#007f7f">async</span> <span style="color:#007f7f">src</span>=<span style="color:#0ff;font-weight:bold">&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;</span>&gt;&lt;/<span style="font-weight:bold">script</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="font-weight:bold">span</span> <span style="color:#007f7f">id</span>=<span style="color:#0ff;font-weight:bold">&#34;busuanzi_container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="font-weight:bold">link</span> <span style="color:#007f7f">rel</span>=<span style="color:#0ff;font-weight:bold">&#34;stylesheet&#34;</span> <span style="color:#007f7f">href</span>=<span style="color:#0ff;font-weight:bold">&#34;//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            Visitors: &lt;<span style="font-weight:bold">span</span> <span style="color:#007f7f">id</span>=<span style="color:#0ff;font-weight:bold">&#34;busuanzi_value_site_uv&#34;</span>&gt;&lt;/<span style="font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>            Views: &lt;<span style="font-weight:bold">span</span> <span style="color:#007f7f">id</span>=<span style="color:#0ff;font-weight:bold">&#34;busuanzi_value_site_pv&#34;</span>&gt;&lt;/<span style="font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="font-weight:bold">footer</span>&gt;
+</span></span><span style="display:flex;"><span>{{- end }}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="customize-social-media-icon">Customize Social Media Icon<a hidden class="anchor" aria-hidden="true" href="#customize-social-media-icon">#</a></h1>
+<ol>
+<li>
+<p>Create your own SVG icon</p>
+</li>
+<li>
+<p>Here I added a customized resume icon. Under <code>themes/PapaerMod/layouts/partials/svg.html</code>, added code below:</p>
+</li>
+</ol>
+<div class="highlight"><div style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-1"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-1"> 1</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-2"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-2"> 2</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-3"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-3"> 3</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-4"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-4"> 4</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-5"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-5"> 5</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-6"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-6"> 6</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-7"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-7"> 7</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-8"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-8"> 8</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-9"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-9"> 9</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-10"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-10">10</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-11"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-11">11</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-12"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-12">12</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-13"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-13">13</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-14"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-14">14</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-15"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-15">15</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-16"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-16">16</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-17"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-17">17</a>
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272" id="hl-2-18"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-2-18">18</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>... {{- else if (eq $icon_name &#34;resume&#34;) -}}
+</span></span><span style="display:flex;"><span>&lt;<span style="font-weight:bold">svg</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#007f7f">xmlns</span>=<span style="color:#0ff;font-weight:bold">&#34;http://www.w3.org/2000/svg&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#007f7f">viewBox</span>=<span style="color:#0ff;font-weight:bold">&#34;0 0 24 24&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#007f7f">fill</span>=<span style="color:#0ff;font-weight:bold">&#34;none&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#007f7f">stroke</span>=<span style="color:#0ff;font-weight:bold">&#34;currentColor&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#007f7f">stroke-width</span>=<span style="color:#0ff;font-weight:bold">&#34;2&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#007f7f">stroke-linecap</span>=<span style="color:#0ff;font-weight:bold">&#34;round&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#007f7f">stroke-linejoin</span>=<span style="color:#0ff;font-weight:bold">&#34;round&#34;</span>
+</span></span><span style="display:flex;"><span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="font-weight:bold">path</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#007f7f">d</span>=<span style="color:#0ff;font-weight:bold">&#34;M4 4v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8.342a2 2 0 0 0-.602-1.43l-4.44-4.342A2 2 0 0 0 13.56 2H6a2 2 0 0 0-2 2z&#34;</span>
+</span></span><span style="display:flex;"><span>  &gt;&lt;/<span style="font-weight:bold">path</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="font-weight:bold">path</span> <span style="color:#007f7f">d</span>=<span style="color:#0ff;font-weight:bold">&#34;M9 13h6&#34;</span>&gt;&lt;/<span style="font-weight:bold">path</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="font-weight:bold">path</span> <span style="color:#007f7f">d</span>=<span style="color:#0ff;font-weight:bold">&#34;M9 17h3&#34;</span>&gt;&lt;/<span style="font-weight:bold">path</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="font-weight:bold">path</span> <span style="color:#007f7f">d</span>=<span style="color:#0ff;font-weight:bold">&#34;M14 2v4a2 2 0 0 0 2 2h4&#34;</span>&gt;&lt;/<span style="font-weight:bold">path</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="font-weight:bold">svg</span>&gt;
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="side-column-directory-bar">Side Column Directory Bar<a hidden class="anchor" aria-hidden="true" href="#side-column-directory-bar">#</a></h1>
+<p>Refer to <strong><a href="https://www.sulvblog.cn/posts/blog/hugo_toc_side/">Hugo 博客目录放在侧边 | PaperMod 主题 | Sulv’s Blog (sulvblog.cn)</a></strong></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+
+<footer class="footer">
+		<span>
+            &copy; 2023 <a href="https://felicixawe.github.io">Esther&#39;s Blog</a></span>
+        </span>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container">
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+            Visitors: <span id="busuanzi_value_site_uv"></span>
+            Views: <span id="busuanzi_value_site_pv"></span>
+        </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

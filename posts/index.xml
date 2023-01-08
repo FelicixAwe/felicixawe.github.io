@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Esther&#39;s Blog</title>
+    <link>https://felicixawe.github.io/posts/</link>
+    <description>Recent content in Posts on Esther&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://felicixawe.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Personal blog &amp; website with Hugo &#43; PaperMod</title>
+      <link>https://felicixawe.github.io/posts/personalwebsite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://felicixawe.github.io/posts/personalwebsite/</guid>
+      <description>Basics Introduction The whole website is developed based on Hugo and PaperMod theme. Deployment The website is deployed on GitHub Page. Create a new repository with the name yourname.github.io Initialize a git in public folder. 1 2 3 4 5 6 cd public git init git remote add origin [repository url] git add . git commit -m &amp;#39;init&amp;#39; git push -f --set-upstream origin master hugo -F --cleanDestinationDir will generate the</description>
+    </item>
+    
+  </channel>
+</rss>
