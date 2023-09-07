@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website<br/>
-  <a href="" target="_blank">felicixawe.github.io</a>
+  <a href="https://felicixawe.github.io/" target="_blank">felicixawe.github.io</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./Images/readme-img.png" />
@@ -47,3 +47,6 @@ The page will reload if you make edits.
 
 Open the project folder and Navigate to `/src/components/`. <br/>
 You will find all the components used and you can edit your information accordingly.
+
+## Credits
+Thanks <a href="https://github.com/soumyajit4419/Portfolio">soumyajit4419</a> for contributions to this beautiful website.
