@@ -1,16 +1,16 @@
 <h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="" target="_blank">estherxiao.tech</a>
+  Portfolio Website<br/>
+  <a href="" target="_blank">felicixawe.github.io</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="" />
+  <img alt="Demo" src="./Images/readme-img.png" />
 </div>
 
 <br/>
 
 ## Built With
 
-My personal portfolio <a href="" target="_blank">estherxiao.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+My personal portfolio <a href="https://felicixawe.github.io/" target="_blank">felicixawe.github.io</a> which features some of my github projects as well as my resume and technical skills.<br/>
 
 This project was built using these technologies.
 
@@ -19,7 +19,7 @@ This project was built using these technologies.
 - Express.js
 - CSS3
 - VsCode
-- Vercel
+- Github Pages
 
 ## Features
 
