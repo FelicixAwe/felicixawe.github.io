@@ -50,3 +50,12 @@ You will find all the components used and you can edit your information accordin
 
 ## Credits
 Thanks <a href="https://github.com/soumyajit4419/Portfolio">soumyajit4419</a> for contributions to this beautiful website.
+
+
+## Modification
+
+## Deploy after modifications
+
+`npm run deploy`
+
+### If it doesn't work, delete gh-pages branch and deploy again. Configure Github Pages in Github Settings.
