@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import foodhub from "../../Assets/Projects/foodhub.png";
 import LINK from "../../Assets/Projects/LINK.png";
-import PersonalWebsite from "../../Assets/Projects/PersonalWebsite.png";
+import RecipeAPI from "../../Assets/Projects/RecipeAPI.png";
 
 function Projects() {
   return (
@@ -31,23 +31,23 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={PersonalWebsite}
-              isBlog={false}
-              title="Personal Website"
-              description="My personal website builds with React.js, Node.js, Express.js, CSS3."
-              // ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              // demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={foodhub}
               isBlog={false}
               title="FoodHub"
               description="Foodhub is a MERN stack-based recipe sharing platform. Users can discover global recipes, filter by tags, use a search bar, or get random dish suggestions. Features include recipe liking, commenting, and user-contributed posts."
               ghLink="https://github.com/FelicixAwe/Food-Hub"
               // demoLink="https://editor.soumya-jit.tech/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={RecipeAPI}
+              isBlog={false}
+              title="DJANGO REST API"
+              description="A RESTful API crafted with Python's Django framework for recipe management. Features include Dockerized local development, Test Driven Development, diverse endpoints for recipe elements, automatic API documentation via Swagger, and deployment on AWS EC2."
+              ghLink="https://github.com/FelicixAwe/recipe-app-api"
+              demoLink="http://ec2-3-138-113-42.us-east-2.compute.amazonaws.com/api/docs/"
             />
           </Col>
         </Row>
